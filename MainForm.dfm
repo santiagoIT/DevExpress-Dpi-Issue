@@ -1,9 +1,9 @@
 object Form1: TForm1
-  Left = 430
-  Top = 124
+  Left = 0
+  Top = 108
   Caption = 'Form1'
-  ClientHeight = 418
-  ClientWidth = 641
+  ClientHeight = 461
+  ClientWidth = 784
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,58 +11,54 @@ object Form1: TForm1
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesigned
   OnCreate = FormCreate
-  DesignSize = (
-    641
-    418)
   PixelsPerInch = 96
   TextHeight = 13
-  object cxRTTIInspector1: TcxRTTIInspector
-    Left = 8
-    Top = 8
-    Width = 249
-    Height = 377
-    TabOrder = 0
-    Version = 1
-  end
   object dxDockSiteCAD: TdxDockSite
     Left = 0
     Top = 0
-    Width = 641
-    Height = 418
+    Width = 784
+    Height = 461
     Align = alClient
+    ExplicitWidth = 1373
+    ExplicitHeight = 500
     DockingType = 5
-    OriginalWidth = 641
-    OriginalHeight = 418
+    OriginalWidth = 784
+    OriginalHeight = 461
     object dxLayoutDockSite1: TdxLayoutDockSite
       Left = 417
       Top = 0
-      Width = 224
-      Height = 418
+      Width = 367
+      Height = 461
+      ExplicitWidth = 224
+      ExplicitHeight = 418
       DockingType = 0
       OriginalWidth = 300
       OriginalHeight = 200
       object dxLayoutDockSite5: TdxLayoutDockSite
         Left = 0
         Top = 69
-        Width = 224
-        Height = 349
+        Width = 367
+        Height = 392
         DockingType = 0
         OriginalWidth = 300
         OriginalHeight = 200
         object dxLayoutDockSite3: TdxLayoutDockSite
           Left = 0
           Top = 0
-          Width = 224
-          Height = 349
+          Width = 367
+          Height = 392
+          ExplicitWidth = 224
+          ExplicitHeight = 349
           DockingType = 0
           OriginalWidth = 300
           OriginalHeight = 200
           object dxLayoutDockSite4: TdxLayoutDockSite
             Left = 0
             Top = 0
-            Width = 224
-            Height = 349
+            Width = 367
+            Height = 392
             DockingType = 0
             OriginalWidth = 300
             OriginalHeight = 200
@@ -72,11 +68,11 @@ object Form1: TForm1
       object dxDockPanelJobSwitch: TdxDockPanel
         Left = 0
         Top = 0
-        Width = 224
+        Width = 367
         Height = 69
         AllowFloating = True
         AutoHide = False
-        Caption = 'Ge'#246'ffnete Bauvorhaben'
+        Caption = 'Another dock panel'
         CustomCaptionButtons.Buttons = <>
         TabsProperties.CustomButtons.Buttons = <>
         DockingType = 2
@@ -85,7 +81,7 @@ object Form1: TForm1
         object cxTabControl1: TcxTabControl
           Left = 0
           Top = 0
-          Width = 218
+          Width = 361
           Height = 34
           Align = alClient
           Constraints.MinHeight = 34
@@ -95,17 +91,16 @@ object Form1: TForm1
           Properties.Options = [pcoCloseButton, pcoGoDialog, pcoGradient, pcoGradientClientArea, pcoRedrawOnResize]
           Properties.TabIndex = 0
           Properties.Tabs.Strings = (
-            'Bauvorhaben A'
-            'Bauvorhaben B'
-            'Bauvorhaben C')
+            'Project 1'
+            'Project 2'
+            'Project 3')
           Properties.TabSlants.Kind = skCutCorner
           TabSlants.Kind = skCutCorner
           OnResize = cxTabControl1Resize
-          ExplicitWidth = 220
-          ExplicitHeight = 45
+          ExplicitWidth = 218
           ClientRectBottom = 32
           ClientRectLeft = 2
-          ClientRectRight = 216
+          ClientRectRight = 359
           ClientRectTop = 31
         end
       end
@@ -114,11 +109,12 @@ object Form1: TForm1
       Left = 0
       Top = 0
       Width = 417
-      Height = 418
+      Height = 461
       ActiveChildIndex = -1
       AllowFloating = False
       AutoHide = False
       CustomCaptionButtons.Buttons = <>
+      ExplicitHeight = 418
       DockingType = 1
       OriginalWidth = 417
       OriginalHeight = 441
@@ -126,27 +122,32 @@ object Form1: TForm1
         Left = 0
         Top = 0
         Width = 417
-        Height = 418
+        Height = 461
         AllowFloating = True
         AutoHide = False
-        Caption = 'Fertigliste'
+        Caption = 'I am a dock panel'
         CustomCaptionButtons.Buttons = <>
         TabsProperties.CustomButtons.Buttons = <>
+        ExplicitHeight = 418
+        DesignSize = (
+          411
+          426)
         DockingType = 0
         OriginalWidth = 417
         OriginalHeight = 39
+        object cxMemoSizeLog: TcxMemo
+          Left = 0
+          Top = 3
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Lines.Strings = (
+            'cxMemoSizeLog')
+          TabOrder = 0
+          ExplicitHeight = 804
+          Height = 420
+          Width = 401
+        end
       end
     end
-  end
-  object cxMemoSizeLog: TcxMemo
-    Left = 8
-    Top = 32
-    Anchors = [akLeft, akTop, akRight]
-    Lines.Strings = (
-      'cxMemoSizeLog')
-    TabOrder = 2
-    Height = 361
-    Width = 393
   end
   object dxDockingManager1: TdxDockingManager
     Color = clBtnFace
@@ -165,13 +166,13 @@ object Form1: TForm1
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
-    Left = 248
-    Top = 328
+    Left = 1096
+    Top = 792
     PixelsPerInch = 96
   end
   object dxSkinController1: TdxSkinController
     SkinName = 'Office2019Colorful'
-    Left = 496
-    Top = 272
+    Left = 992
+    Top = 800
   end
 end

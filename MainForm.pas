@@ -24,7 +24,6 @@ uses
 
 type
   TForm1 = class(TdxForm)
-    cxRTTIInspector1: TcxRTTIInspector;
     dxDockingManager1: TdxDockingManager;
     dxDockSiteCAD: TdxDockSite;
     cxTabControl1: TcxTabControl;
