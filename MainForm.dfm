@@ -44,17 +44,6 @@ object Form1: TForm1
         DockingType = 0
         OriginalWidth = 300
         OriginalHeight = 200
-        object dxLayoutDockSite3: TdxLayoutDockSite
-          Left = 0
-          Top = 0
-          Width = 367
-          Height = 392
-          ExplicitWidth = 224
-          ExplicitHeight = 349
-          DockingType = 0
-          OriginalWidth = 300
-          OriginalHeight = 200
-        end
       end
       object dxDockPanelJobSwitch: TdxDockPanel
         Left = 0
