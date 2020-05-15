@@ -29,7 +29,6 @@ type
     cxTabControl1: TcxTabControl;
     dxLayoutDockSite1: TdxLayoutDockSite;
     dxLayoutDockSite3: TdxLayoutDockSite;
-    dxLayoutDockSite4: TdxLayoutDockSite;
     dxLayoutDockSite5: TdxLayoutDockSite;
     dxDockPanelJobSwitch: TdxDockPanel;
     dxVertContainerDockSite1: TdxVertContainerDockSite;
