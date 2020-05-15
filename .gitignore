@@ -1,0 +1,9 @@
+
+*.local
+*.dcu
+Project1.identcache
+__history/
+Project1.exe
+Project1.res
+Project1.~dsk
+Project1.dsk
