@@ -21,8 +21,6 @@ object Form1: TForm1
     Width = 784
     Height = 461
     Align = alClient
-    ExplicitWidth = 1373
-    ExplicitHeight = 500
     DockingType = 5
     OriginalWidth = 784
     OriginalHeight = 461
@@ -31,8 +29,6 @@ object Form1: TForm1
       Top = 0
       Width = 367
       Height = 461
-      ExplicitWidth = 224
-      ExplicitHeight = 418
       DockingType = 0
       OriginalWidth = 300
       OriginalHeight = 200
@@ -55,6 +51,7 @@ object Form1: TForm1
         Caption = 'Another dock panel'
         CustomCaptionButtons.Buttons = <>
         TabsProperties.CustomButtons.Buttons = <>
+        OnResize = dxDockPanelJobSwitchResize
         DockingType = 2
         OriginalWidth = 449
         OriginalHeight = 69
@@ -77,7 +74,6 @@ object Form1: TForm1
           Properties.TabSlants.Kind = skCutCorner
           TabSlants.Kind = skCutCorner
           OnResize = cxTabControl1Resize
-          ExplicitWidth = 218
           ClientRectBottom = 32
           ClientRectLeft = 2
           ClientRectRight = 359
@@ -94,7 +90,6 @@ object Form1: TForm1
       AllowFloating = False
       AutoHide = False
       CustomCaptionButtons.Buttons = <>
-      ExplicitHeight = 418
       DockingType = 1
       OriginalWidth = 417
       OriginalHeight = 441
@@ -108,7 +103,6 @@ object Form1: TForm1
         Caption = 'I am a dock panel'
         CustomCaptionButtons.Buttons = <>
         TabsProperties.CustomButtons.Buttons = <>
-        ExplicitHeight = 418
         DesignSize = (
           411
           426)
@@ -116,15 +110,14 @@ object Form1: TForm1
         OriginalWidth = 417
         OriginalHeight = 39
         object cxMemoSizeLog: TcxMemo
-          Left = 0
+          Left = 3
           Top = 3
           Anchors = [akLeft, akTop, akRight, akBottom]
           Lines.Strings = (
             'cxMemoSizeLog')
           TabOrder = 0
-          ExplicitHeight = 804
-          Height = 420
-          Width = 401
+          Height = 409
+          Width = 399
         end
       end
     end

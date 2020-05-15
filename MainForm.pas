@@ -35,8 +35,10 @@ type
     dxSkinController1: TdxSkinController;
     procedure FormCreate(Sender: TObject);
     procedure cxTabControl1Resize(Sender: TObject);
+    procedure dxDockPanelJobSwitchResize(Sender: TObject);
   private
-    FLastHeight: Integer;
+    FLastHeightTabControl: Integer;
+    FLastHeightDockPanel: Integer;
     { Private declarations }
   public
     { Public declarations }
@@ -52,15 +54,25 @@ implementation
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   cxMemoSizeLog.Clear;
-  FLastHeight := -1;
+  FLastHeightTabControl := -1;
+  FLastHeightDockPanel := -1;
 end;
 
 procedure TForm1.cxTabControl1Resize(Sender: TObject);
 begin
-  if (FLastHeight = -1) or (FLastHeight <> cxTabControl1.Height) then
+  if (FLastHeightTabControl = -1) or (FLastHeightTabControl <> cxTabControl1.Height) then
   begin
-    FLastHeight := cxTabControl1.Height;
+    FLastHeightTabControl := cxTabControl1.Height;
     cxMemoSizeLog.Lines.Add(Format('cxTabControl1 - Height is now: %d', [cxTabControl1.Height]));
+  end;
+end;
+
+procedure TForm1.dxDockPanelJobSwitchResize(Sender: TObject);
+begin
+  if (FLastHeightDockPanel = -1) or (FLastHeightDockPanel <> dxDockPanelJobSwitch.Height) then
+  begin
+    FLastHeightDockPanel := dxDockPanelJobSwitch.Height;
+    cxMemoSizeLog.Lines.Add(Format('dxDockPanelJobSwitch - Height is now: %d', [dxDockPanelJobSwitch.Height]));
   end;
 end;
 
