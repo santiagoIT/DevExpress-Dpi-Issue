@@ -20,7 +20,7 @@ uses
   dxSkinVS2010, dxSkinWhiteprint, dxSkinXmas2008Blue, Menus, StdCtrls,
   cxButtons, dxSkinsForm, cxInplaceContainer, cxVGrid, cxOI, cxContainer,
   cxGroupBox, dxScrollbarAnnotations, dxSkinOffice2013White,
-  dxSkinOffice2016Dark, dxSkinOffice2019Colorful, cxClasses, TestDataModule, cxPC, dxBarBuiltInMenu, dxDockControl, dxDockPanel, cxTextEdit, cxMemo, cxDBEdit;
+  dxSkinOffice2016Dark, dxSkinOffice2019Colorful, cxClasses, cxPC, dxBarBuiltInMenu, dxDockControl, dxDockPanel, cxTextEdit, cxMemo, cxDBEdit;
 
 type
   TForm1 = class(TdxForm)
@@ -35,6 +35,7 @@ type
     dxDockPanelJobSwitch: TdxDockPanel;
     dxVertContainerDockSite1: TdxVertContainerDockSite;
     cxMemoSizeLog: TcxMemo;
+    dxSkinController1: TdxSkinController;
     procedure FormCreate(Sender: TObject);
     procedure cxTabControl1Resize(Sender: TObject);
   private

@@ -101,6 +101,8 @@ object Form1: TForm1
           Properties.TabSlants.Kind = skCutCorner
           TabSlants.Kind = skCutCorner
           OnResize = cxTabControl1Resize
+          ExplicitWidth = 220
+          ExplicitHeight = 45
           ClientRectBottom = 32
           ClientRectLeft = 2
           ClientRectRight = 216
@@ -166,5 +168,10 @@ object Form1: TForm1
     Left = 248
     Top = 328
     PixelsPerInch = 96
+  end
+  object dxSkinController1: TdxSkinController
+    SkinName = 'Office2019Colorful'
+    Left = 496
+    Top = 272
   end
 end
